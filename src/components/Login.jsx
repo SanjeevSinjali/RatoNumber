@@ -17,19 +17,18 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login form submitted:', formData);
-    // Add your authentication logic here
+
   };
 
   return (
-    <div className="auth-container">
-      <div className="auth-card">
+    <div className="login-container">
+      <div className="login-card">
         <h2>Login to Your Account</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label>Email</label>
             <input
               type="email"
-              id="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -39,10 +38,9 @@ const Login = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label>Password</label>
             <input
               type="password"
-              id="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
@@ -51,9 +49,9 @@ const Login = () => {
             />
           </div>
           
-          <button type="submit" className="auth-btn">Login</button>
+          <button type="submit" className="login-btn">Login</button>
           
-          <p className="auth-switch">
+          <p className="register-link">
             Don't have an account? <a href="/register">Register</a>
           </p>
         </form>
