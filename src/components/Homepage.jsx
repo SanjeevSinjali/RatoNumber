@@ -34,7 +34,7 @@ const Homepage = () => {
         <div className="hero-content container">
           <h1>Your ride, Your rules</h1>
           <p>Rent premium cars with ease—reliable, affordable and ready when you are.</p>
-          <button className="btn">Explore Our Fleet</button>
+          <button className="btn">Explore</button>
         </div>
       </section>
 
