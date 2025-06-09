@@ -20,7 +20,7 @@ const Homepage = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content container">
-          <h1>Cruise Lagos in style</h1>
+          <h1>Your ride, Your rules</h1>
           <p>Rent premium cars with ease—reliable, affordable and ready when you are.</p>
           <button className="btn">Explore Our Fleet</button>
         </div>
@@ -37,7 +37,6 @@ const Homepage = () => {
                 <option value="">Select car type</option>
                 <option value="sedan">Sedan</option>
                 <option value="suv">SUV</option>
-                <option value="luxury">Luxury</option>
               </select>
             </div>
             
