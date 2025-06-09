@@ -1,5 +1,17 @@
 import React from 'react';
 import './Homepage.css';
+import { Link } from 'react-router-dom';
+
+<nav>
+  <ul className="nav-links">
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/vehicles">Vehicles</Link></li>
+    <li><Link to="/about">About Us</Link></li>
+    <li><Link to="/contact">Contact Us</Link></li>
+    <li><Link to="/login">Login</Link></li>
+    <li><Link to="/register">Register</Link></li>
+  </ul>
+</nav>
 
 const Homepage = () => {
   return (
