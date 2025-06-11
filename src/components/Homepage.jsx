@@ -2,17 +2,6 @@ import React from 'react';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
 
-<nav>
-  <ul className="nav-links">
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/vehicles">Vehicles</Link></li>
-    <li><Link to="/about">About Us</Link></li>
-    <li><Link to="/contact">Contact Us</Link></li>
-    <li><Link to="/login">Login</Link></li>
-    <li><Link to="/register">Register</Link></li>
-  </ul>
-</nav>
-
 const Homepage = () => {
   return (
     <>
@@ -21,10 +10,12 @@ const Homepage = () => {
         <div className="logo">RatoNumber</div>
         <nav>
           <ul className="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/vehicles">Vehicles</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/vehicles">Vehicles</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/register">Register</Link></li>
           </ul>
         </nav>
       </header>
@@ -89,8 +80,16 @@ const Homepage = () => {
                 required 
               />
             </div>
+
+            {/* Form submit button */}
+            <button 
+              type="submit" 
+              className="btn" 
+              style={{ width: '100%' }}
+            >
+              Book now
+            </button>
           </form>
-          <button className="btn" style={{ width: '100%' }}>Book now</button>
         </div>
       </section>
 
