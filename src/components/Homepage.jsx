@@ -105,7 +105,7 @@ const Homepage = () => {
         <div className="feature-card">
           <div className="feature-icon">🛋️</div>
           <h3>Comfort</h3>
-          <p>Our rentals come with professional drivers and security detail upon request.</p>
+          <p>Our rentals come with optional security detail upon request for your peace of mind.</p>
         </div>
         
         <div className="feature-card">
