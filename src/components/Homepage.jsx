@@ -85,7 +85,7 @@ const Homepage = () => {
             <button 
               type="submit" 
               className="btn" 
-              style={{ width: '100%' }}
+              style={{ width: '80%' }}
             >
               Book now
             </button>
