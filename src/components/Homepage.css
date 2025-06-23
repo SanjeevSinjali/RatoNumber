@@ -34,7 +34,7 @@
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3') no-repeat center center/cover;
+              url('assets/CarHomePage.jpg') no-repeat center center/cover;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -150,6 +150,7 @@
     gap: 15px;
   }
 }
+
 .register-link {
   background-color: #ff5e14;
   color: white !important;

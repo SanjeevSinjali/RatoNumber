@@ -1,6 +1,7 @@
 import React from 'react';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
+import CarHomePage from '../assets/CarHomePage.jpg';
 
 const Homepage = () => {
   return (
@@ -21,7 +22,15 @@ const Homepage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
+      <section
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${CarHomePage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="hero-content container">
           <h1>Your ride, Your rules</h1>
           <p>Rent premium cars with ease—reliable, affordable and ready when you are.</p>
@@ -42,49 +51,49 @@ const Homepage = () => {
                 <option value="suv">SUV</option>
               </select>
             </div>
-            
+
             <div className="form-group">
               <label htmlFor="pickup">Pick-up location</label>
-              <input 
-                type="text" 
-                id="pickup" 
+              <input
+                type="text"
+                id="pickup"
                 placeholder="Enter location"
-                required 
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label htmlFor="dropoff">Drop-off location</label>
-              <input 
-                type="text" 
-                id="dropoff" 
+              <input
+                type="text"
+                id="dropoff"
                 placeholder="Enter location"
-                required 
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label htmlFor="rentalDate">Rental date</label>
-              <input 
-                type="date" 
-                id="rentalDate" 
-                required 
+              <input
+                type="date"
+                id="rentalDate"
+                required
               />
             </div>
-            
+
             <div className="form-group">
               <label htmlFor="returnDate">Return date</label>
-              <input 
-                type="date" 
-                id="returnDate" 
-                required 
+              <input
+                type="date"
+                id="returnDate"
+                required
               />
             </div>
 
             {/* Form submit button */}
-            <button 
-              type="submit" 
-              className="btn" 
+            <button
+              type="submit"
+              className="btn"
               style={{ width: '80%' }}
             >
               Book now
@@ -100,13 +109,13 @@ const Homepage = () => {
           <h3>Availability</h3>
           <p>Our cars are available whenever you need them.</p>
         </div>
-        
+
         <div className="feature-card">
           <div className="feature-icon">🛋️</div>
           <h3>Comfort</h3>
           <p>Our rentals come with optional security detail upon request for your peace of mind.</p>
         </div>
-        
+
         <div className="feature-card">
           <div className="feature-icon">💰</div>
           <h3>Savings</h3>
