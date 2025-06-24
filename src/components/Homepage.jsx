@@ -96,7 +96,7 @@ const Homepage = () => {
               className="btn"
               style={{ width: '80%' }}
             >
-              Book now
+              Find Cars
             </button>
           </form>
         </div>
