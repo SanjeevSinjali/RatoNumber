@@ -5,6 +5,7 @@ const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    contact: '',
     password: '',
     confirmPassword: ''
   });
@@ -33,11 +34,10 @@ const Register = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder=""
               required
             />
           </div>
-          
+
           <div className="form-group">
             <label>Email</label>
             <input
@@ -45,11 +45,21 @@ const Register = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder=""
               required
             />
           </div>
-          
+
+          <div className="form-group">
+            <label>Contact Number</label>
+            <input
+              type="tel"
+              name="contact"
+              value={formData.contact}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
           <div className="form-group">
             <label>Password</label>
             <input
@@ -57,11 +67,10 @@ const Register = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder=""
               required
             />
           </div>
-          
+
           <div className="form-group">
             <label>Confirm Password</label>
             <input
@@ -69,13 +78,12 @@ const Register = () => {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              placeholder=""
               required
             />
           </div>
-          
+
           <button type="submit" className="register-btn">Register</button>
-          
+
           <p className="login-link">
             Already have an account? <a href="/login">Login</a>
           </p>
