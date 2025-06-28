@@ -15,8 +15,9 @@ const Homepage = () => {
             <li><Link to="/vehicles">Vehicles</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/register">Register</Link></li>
+            <li>
+              <Link to="/login" className="login-button">Login</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -90,7 +91,6 @@ const Homepage = () => {
               />
             </div>
 
-            {/* Form submit button */}
             <button
               type="submit"
               className="btn"
