@@ -17,7 +17,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login form submitted:', formData);
-
   };
 
   return (
@@ -47,6 +46,14 @@ const Login = () => {
               placeholder="Enter your password"
               required
             />
+          </div>
+
+          <div className="form-options">
+            <label className="remember-me">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="/forgot-password" className="forgot-password">Forgot Password?</a>
           </div>
           
           <button type="submit" className="login-btn">Login</button>
