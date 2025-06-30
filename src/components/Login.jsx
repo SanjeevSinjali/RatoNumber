@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -17,6 +19,10 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login form submitted:', formData);
+
+    // You can add authentication logic here.
+    // On success:
+    navigate('/dashboard');
   };
 
   return (
